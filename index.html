@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <title>Planets in Solar System</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Calcula tu peso en otro planeta</h1>
+      <div class="ingresarPeso">
+        <img
+          class="planet-image"
+          src="./assets/planetas-icons/tierra.png"
+          alt="Imagen del planeta tierra" />
+        <p>Cuantos kg pesas en la tierra?</p>
+        <input
+          type="number"
+          id="pesoEnLaTierra"
+          min="0"
+          step="0.1"
+          placeholder="Ej: 50 Kg"
+          onchange="mostrarPeso()"
+          required />
+      </div>
+
+      <p id="mostrarPeso"></p>
+
+      <div class="select" id="select" onclick="mostrarPlanetas()">
+        <img
+          class="planet-image"
+          id="selected-planet_img"
+          src="./assets/planetas-icons/extraterrestre.png"
+          alt="Imagen de un extraterrestre" />
+        <h3 class="selected-planet_title" id="selected-planet_title">
+          Selecciona el planeta
+        </h3>
+      </div>
+      <div class="planets-container scrollbar" id="planets-container">
+        <div class="planets-container_header">
+          <h2>Elige un planeta</h2>
+          <img
+            class="planets-container_header-close"
+            onclick="ocultarPlanetas()"
+            src="./assets/icons/close.svg"
+            alt="Icono de una X" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a target="blank" href="https://gonzaloyacante.github.io/portfolio/">
+        2023 &copy; Gonzalo Yacante
+      </a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, sans-serif;
+  background-image: url(./assets/bg-space-image.jpg);
+  background-position: center;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background-color: #333;
+  color: white;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(115, 115, 115, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem;
+  height: 90vh;
+  width: calc(30rem + 10vw);
+  z-index: 50;
+}
+
+.ingresarPeso {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ingresarPeso img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.ingresarPeso p {
+  margin: 1rem auto;
+}
+
+.ingresarPeso input[type="number"]::-webkit-inner-spin-button,
+.ingresarPeso input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.ingresarPeso input[type="number"] {
+  -moz-appearance: textfield;
+
+  background-color: transparent;
+  color: #e0e0e0;
+
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  height: 5rem;
+  width: 20rem;
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  border-bottom: 0.1rem solid #e0e0e0;
+}
+
+.ingresarPeso input[type="number"]:active,
+.ingresarPeso input[type="number"]:focus {
+  background-color: rgba(59, 59, 59, 0.7);
+}
+
+.select {
+  width: 25rem;
+  height: 20rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 0.2rem solid rgba(255, 255, 255, 0.18);
+}
+
+.select.active,
+.select:hover {
+  box-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.16);
+  border: 0.2rem solid #e0e0e0;
+  cursor: pointer;
+}
+
+.planets-container.active {
+  display: grid;
+  animation: fadeIn 0.3s forwards;
+}
+
+.planets-container .planet-card {
+  padding: 2rem;
+}
+
+.planet-card:hover {
+  background-color: #e0e0e0;
+}
+
+.planet-card:hover .planet-name,
+.planet-card:hover .planet-gravity,
+.planet-card:hover .planet-description {
+  color: #000000;
+}
+
+.planets-container {
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(17, 17, 17, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.16);
+  max-height: 90vh;
+  width: 95vw;
+  overflow: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  padding: 8rem 2rem 2rem 2rem;
+  display: none;
+}
+
+.planets-container_header {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.planets-container_header-close {
+  position: absolute;
+  top: 0rem;
+  right: 2rem;
+  z-index: 1010;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.planets-container_header-close:hover,
+.planets-container_header-close:focus {
+  background-color: #878787;
+  border: #e0e0e0 0.3rem solid;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.planet-card {
+  transition: 0.2s ease all;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  background-color: #444;
+  text-align: start;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 20rem;
+  cursor: pointer;
+}
+
+.planet-card_header,
+.planet-card_text {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.planet-card_header {
+  width: 35%;
+  align-items: center;
+}
+
+.planet-card_text {
+  width: 60%;
+}
+
+.planet-name {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.planet-image {
+  width: 8rem;
+  height: 8rem;
+}
+
+.planet-description {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+/* Tamaño del scroll */
+.scrollbar::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+/* Estilos barra (thumb) de scroll */
+.scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(75, 75, 75, 0.65);
+  border-radius: 0.5rem;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(233, 233, 233, 0.8);
+  box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos track de scroll */
+.scrollbar::-webkit-scrollbar-track {
+  background: #212529;
+  border-radius: 0.5rem;
+}
+
+footer {
+  height: 3rem;
+  position: absolute;
+  bottom: 0;
+}
+
+footer a {
+  color: #e0e0e0;
+  text-decoration: underline;
+  z-index: 50;
+}
