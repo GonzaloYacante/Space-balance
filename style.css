@@ -35,9 +35,13 @@ main {
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 1rem;
-  height: 90vh;
+  height: 88vh;
   width: calc(30rem + 10vw);
   z-index: 50;
+}
+
+.title {
+  font-size: 3rem;
 }
 
 .ingresarPeso {
@@ -106,7 +110,7 @@ main {
 }
 
 .planets-container.active {
-  visibility: visible;
+  display: grid;
   animation: fadeIn 0.3s forwards;
 }
 
@@ -125,7 +129,7 @@ main {
 }
 
 .planets-container {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 2rem;
   position: absolute;
@@ -141,12 +145,11 @@ main {
   overflow-x: hidden;
   z-index: 1000;
   padding: 8rem 2rem 2rem 2rem;
-  visibility: hidden;
 }
 
 .planets-container_header {
   position: absolute;
-  top: 4%;
+  top: 4rem;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -158,8 +161,8 @@ main {
   right: 2rem;
   z-index: 1010;
   border-radius: 50%;
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .planets-container_header-close:hover,
