@@ -13,78 +13,67 @@ inputElement.addEventListener("input", function () {
 const solarSystem = [
   {
     name: "Sol",
-    description:
-      "Es una estrella y es la principal fuente de luz y calor en el sistema solar.",
+    description: "Es una estrella y es la principal fuente de luz y calor en el sistema solar.",
     image: "./assets/planetas-icons/Sol.png",
     gravity: 274,
   },
   {
     name: "Mercurio",
-    description:
-      "Es el planeta más cercano al Sol y el planeta más pequeño del sistema solar.",
+    description: "Es el planeta más cercano al Sol y el planeta más pequeño del sistema solar.",
     image: "./assets/planetas-icons/Mercurio.png",
     gravity: 3.7,
   },
   {
     name: "Venus",
-    description:
-      "Es el planeta más caliente del sistema solar, con temperaturas superiores a 400°C.",
+    description: "Es el planeta más caliente del sistema solar, con temperaturas superiores a 400°C.",
     image: "./assets/planetas-icons/Venus.png",
     gravity: 8.87,
   },
   {
     name: "Tierra",
-    description:
-      "Es el hogar de la vida humana y es el tercer planeta desde el Sol.",
+    description: "Es el hogar de la vida humana y es el tercer planeta desde el Sol.",
     image: "./assets/planetas-icons/Tierra.png",
     gravity: 9.8,
   },
   {
     name: "Luna",
-    description:
-      "Es el satélite natural de la Tierra y es el quinto más grande del sistema solar.",
+    description: "Es el satélite natural de la Tierra y es el quinto más grande del sistema solar.",
     image: "./assets/planetas-icons/Luna.png",
     gravity: 1.62,
   },
   {
     name: "Marte",
-    description:
-      "Es conocido como el planeta rojo y es el hogar de algunos de los mayores desiertos de la galaxia.",
+    description: "Es conocido como el planeta rojo y es el hogar de algunos de los mayores desiertos de la galaxia.",
     image: "./assets/planetas-icons/Marte.png",
     gravity: 3.711,
   },
   {
     name: "Júpiter",
-    description:
-      "Es el planeta más grande del sistema solar y es un gigante gaseoso.",
+    description: "Es el planeta más grande del sistema solar y es un gigante gaseoso.",
     image: "./assets/planetas-icons/Jupiter.png",
     gravity: 24.79,
   },
   {
     name: "Saturno",
-    description:
-      "Es conocido por sus anillos y es el segundo planeta más grande del sistema solar.",
+    description: "Es conocido por sus anillos y es el segundo planeta más grande del sistema solar.",
     image: "./assets/planetas-icons/Saturno.png",
     gravity: 10.44,
   },
   {
     name: "Urano",
-    description:
-      "Es el séptimo planeta desde el Sol y es el tercer planeta más grande en tamaño y menor en masa.",
+    description: "Es el séptimo planeta desde el Sol y es el tercer planeta más grande en tamaño y menor en masa.",
     image: "./assets/planetas-icons/Urano.png",
     gravity: 8.69,
   },
   {
     name: "Neptuno",
-    description:
-      "Es el octavo planeta desde el Sol y es conocido por sus intensas tormentas.",
+    description: "Es el octavo planeta desde el Sol y es conocido por sus intensas tormentas.",
     image: "./assets/planetas-icons/Neptuno.png",
     gravity: 11.15,
   },
   {
     name: "Plutón",
-    description:
-      "Es un planeta enano y antiguamente fue considerado el noveno planeta del sistema solar.",
+    description: "Es un planeta enano y antiguamente fue considerado el noveno planeta del sistema solar.",
     image: "./assets/planetas-icons/Pluton.png",
     gravity: 0.62,
   },
