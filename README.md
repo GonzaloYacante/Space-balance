@@ -21,7 +21,7 @@ Do you want to know how much you would weigh on another planet? Try our Planetar
 
 ### Links
 
-- Solution URL: [Solution](https://gonzaloyacante.github.io/Componente-QR/)
+- Solution URL: [Solution](https://spacebalance.netlify.app/)
 
 
 ### Built with
@@ -74,7 +74,7 @@ Do you want to know how much you would weigh on another planet? Try our Planetar
 
 ### Enlaces
 
-- URL de la solución: [Solución](https://gonzaloyacante.github.io/Componente-QR/)
+- URL de la solución: [Solución](https://spacebalance.netlify.app/)
 
 
 ### Construido con
