@@ -100,5 +100,5 @@ Do you want to know how much you would weigh on another planet? Try our Planetar
 
 ## Autor
 
-- Sitio Web - [Gonzalo Yacante](https://gonzaloyacante.github.io/portfolio/)
-- Instagram - [@gonzaloyacante](https://www.instagram.com/gonzaloyacante/)
+- Sitio Web - [Gonzalo Yacante](https://gonzaloyacante.netlify.app/)
+- LinkedIn - [Gonzalo Yacante](https://www.linkedin.com/in/gonzaloyacante/)
